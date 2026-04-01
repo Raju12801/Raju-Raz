@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Raju Kumar  — Full Stack Developer</title>
+<title>Raju Kumar Paswan — Full Stack Developer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet" />
 <style>
@@ -73,6 +73,22 @@ nav {
   max-width: 1120px; margin: 0 auto; padding: 0 24px;
   width: 100%;
   display: flex; align-items: center; justify-content: space-between;
+}
+.nav-brand {
+  width: 74px;
+  height: 54px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  transition: transform .2s ease;
+}
+.nav-brand:hover { transform: translateY(-1px); }
+.rk-logo-svg {
+  width: 64px;
+  height: 46px;
+  display: block;
+  filter: drop-shadow(0 2px 7px rgba(10, 51, 112, .22));
 }
 .logo {
   font-family: var(--font-head);
@@ -719,7 +735,28 @@ footer {
 <!-- ── NAV ─────────────────────────────────────────────── -->
 <nav>
   <div class="nav-inner">
-    <div class="logo">R<span>.</span>K<span></span></div>
+    <a href="#hero" class="nav-brand" aria-label="RK Home">
+      <svg class="rk-logo-svg" viewBox="0 0 110 74" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img">
+        <defs>
+          <linearGradient id="rkBlue" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0d356d"/>
+            <stop offset="50%" stop-color="#1b5aa3"/>
+            <stop offset="100%" stop-color="#2f7fd4"/>
+          </linearGradient>
+          <linearGradient id="rkGold" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#9b7230"/>
+            <stop offset="55%" stop-color="#cfac63"/>
+            <stop offset="100%" stop-color="#f0d189"/>
+          </linearGradient>
+        </defs>
+
+        <text x="16" y="54" font-family="Syne, sans-serif" font-weight="800" font-size="56" fill="url(#rkBlue)">R</text>
+        <text x="52" y="54" font-family="Syne, sans-serif" font-weight="800" font-size="56" fill="url(#rkGold)">K</text>
+
+        <path d="M30 19 C48 20, 50 33, 46 47" stroke="url(#rkBlue)" stroke-width="5" stroke-linecap="round" fill="none"/>
+        <path d="M40 17 C57 17, 58 33, 53 50" stroke="url(#rkGold)" stroke-width="4" stroke-linecap="round" fill="none"/>
+      </svg>
+    </a>
     <div class="nav-links">
       <a href="#about">About</a>
       <a href="#skills">Skills</a>
@@ -752,7 +789,7 @@ footer {
   <div class="container">
     <div class="hero-inner">
       <div class="hero-content">
-        <div class="hero-badge">Available for Opportunities</div>
+        <!-- <div class="hero-badge">Available for Opportunities</div> -->
         <h1 class="hero-name">
           Raju Kumar<br><span class="line2"></span>
         </h1>
